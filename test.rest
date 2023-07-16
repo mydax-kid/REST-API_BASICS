@@ -1,0 +1,34 @@
+###
+GET http://localhost:8000
+
+
+###
+GET http://localhost:8000/samuel?limit=10
+
+
+###
+POST http://localhost:8000
+Content-Type: application/json
+# Authorization: token
+
+{
+    "friend": "trish"
+}
+
+
+###
+PUT http://localhost:8000/trish
+Content-Type: application/json
+
+{
+    "friend": "sally"
+}
+
+
+### 
+DELETE http://localhost:8000 
+Content-Type: application/json
+
+{
+"enemy": "lucy"
+}
